@@ -1,0 +1,8 @@
+
+A Masked man approaches:
+[WHAT WOULD YOU LIKE TO DO?]
+                                 ___________________________
+                                | 1 - Play the next game    |
+                                | 2 - List all games        |
+                                | 3 - Quit                  |
+                                 ---------------------------

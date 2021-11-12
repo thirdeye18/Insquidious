@@ -1,0 +1,11 @@
+
+Welcome. Would you like to play?
+
+ ___________________________
+| 1 - New Story Game        |
+| 2 - Continue              |
+| 3 - Mini Game Selector    |
+| 4 - Quit                  |
+ ---------------------------
+
+Please select a number to continue

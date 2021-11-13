@@ -1,7 +1,5 @@
 package com.insquidious.squidgame.player;
 
-import com.insquidious.squidgame.util.Dice;
-
 public abstract class Player {
     //fields
     protected boolean isAlive;//No need in constructor because every player is alive
@@ -11,20 +9,21 @@ public abstract class Player {
     protected int yCoordinate = 0;
     protected int playerID;
 
+    //ctors
     public Player(String playerName)
     {
-        isAlive = true;
-        this.playerName = playerName;
-        this.playerSpd = getPlayerSpd();
+        setAlive(true);
+        setPlayerName(playerName);
     }
 
     public Player(String playerName, int playerSpd)
     {
-        isAlive = true;
-        this.playerName = playerName;
-        this.playerSpd = 1;
+        setAlive(true);
+        setPlayerName(playerName);
+        setPlayerSpd(playerSpd);
     }
 
+    //accessors
     public boolean isAlive() {
         return isAlive;
     }

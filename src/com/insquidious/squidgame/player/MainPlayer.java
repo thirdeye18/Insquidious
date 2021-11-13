@@ -1,15 +1,16 @@
 package com.insquidious.squidgame.player;
 
 public class MainPlayer extends Player{
+    //fields
     private int attributePoints = 3; //start with 3 (will increase with additional stats/games)
 
     //ctor
     public MainPlayer(String playerName, int playerSpd){
-
         super(playerName, playerSpd);
-        this.attributePoints = getAttributePoints();
     }
 
+
+    //accessors
     public void setAttributePoints(int attributePoints) {
         this.attributePoints = attributePoints;
     }

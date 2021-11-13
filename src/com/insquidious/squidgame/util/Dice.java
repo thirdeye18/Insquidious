@@ -16,7 +16,7 @@ import java.util.Random;
 
 public class Dice {
     //fields
-    private int sides = 6;
+    private int sides = 6;  //Dice defaults to generating 1 6-sided dice if no arguments passed
     private int numDice = 1;
 
     //methods
@@ -29,7 +29,7 @@ public class Dice {
      */
     public int roll() {
         int result = 0;
-        sides = getSides() + 1;
+        sides = getSides();
         Random random = new Random();   //instance of the random number class
         result = (random.nextInt(sides) + 1);   //generates random number from 1-sides
         return result;

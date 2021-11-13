@@ -3,29 +3,31 @@ package com.insquidious.squidgame.player;
 import java.util.Random;
 
 public class ComputerPlayer extends Player{
+    //static final fields
     private static final int MAX_SPEED = 5;
     private static final int MIN_SPEED = 2;
 
     public ComputerPlayer(String playerName){
         super(playerName);
-        setPlayerSpd(playerSpd);
+        setPlayerSpd(generateRandomSpeed());
     };
 
-    private int generateRandomSpeed( int MIN_SPEED, int MAX_SPEED){
+    private int generateRandomSpeed(){
         Random randomSpeed = new Random();
-        return playerSpd = randomSpeed.nextInt(MAX_SPEED - MIN_SPEED) + MIN_SPEED;
+        //return random int b/t min and max(inclusive)
+        return randomSpeed.nextInt(((MAX_SPEED - MIN_SPEED) + 1) + MIN_SPEED);
     }
 
-
-    @Override
+    //pretty sure not needed because they would get inherited
+/*    @Override
     public int getPlayerSpd() {
         return playerSpd;
     }
 
     @Override
     public void setPlayerSpd(int playerSpd) {
-        this.playerSpd = generateRandomSpeed(MIN_SPEED, MAX_SPEED);
-    }
+        this.playerSpd = playerSpd;
+    }*/
 
     @Override
     public String toString() {

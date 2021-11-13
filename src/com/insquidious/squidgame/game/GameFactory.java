@@ -12,6 +12,12 @@ public class GameFactory {
             case DALGANO:
                 game = new DalganoGame();
                 break;
+            case TUGOFWAR:
+                break;
+            case GLASSBRIDGE:
+                break;
+            case MARBLES:
+                break;
             default:
                 //possibly throw exception at some time
                 //TODO: add in throwing exception

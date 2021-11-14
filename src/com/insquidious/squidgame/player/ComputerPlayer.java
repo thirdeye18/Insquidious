@@ -10,7 +10,7 @@ public class ComputerPlayer extends Player{
     public ComputerPlayer(String playerName){
         super(playerName);
         setPlayerSpd(generateRandomSpeed());
-    };
+    }
 
     private int generateRandomSpeed(){
         Random randomSpeed = new Random();

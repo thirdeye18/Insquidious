@@ -28,7 +28,7 @@ public class Dice {
      * roll, or in combination with dieSum to tally multiple rolls.
      */
     public int roll() {
-        int result = 0;
+        int result;
         sides = getSides();
         Random random = new Random();   //instance of the random number class
         result = (random.nextInt(sides) + 1);   //generates random number from 1-sides
@@ -44,7 +44,7 @@ public class Dice {
     }
 
     //constructors
-    public Dice(){};
+    public Dice(){}
 
     public Dice(int sides) {
         setSides(sides);
